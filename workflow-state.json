@@ -1,0 +1,67 @@
+{
+  "workflow_id": "REQ-1042",
+  "simulate_failure": true,
+  "failure_attempts": 1,
+  "inquiry": {
+    "passengers": 6,
+    "route": "SFO to Teterboro",
+    "date": "2026-12-05"
+  },
+  "status": "PAUSED",
+  "current_step": "Send approved quote",
+  "context": {
+    "availability_checked": true,
+    "aircraft": "Citation Latitude",
+    "quote": {
+      "aircraft": "Citation Latitude",
+      "route": "SFO to Teterboro",
+      "passengers": 6,
+      "date": "2026-12-05",
+      "amount": "$18,500"
+    },
+    "quote_prepared": true
+  },
+  "approved": false,
+  "history": [
+    {
+      "status": "START",
+      "message": "Workflow REQ-1042",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "message": "Check aircraft availability",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "FAILED",
+      "message": "Temporary API timeout",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "RETRY",
+      "message": "Attempt 2",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "SUCCESS",
+      "message": "Aircraft availability received",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "message": "Prepare quote",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "SUCCESS",
+      "message": "Draft prepared",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    },
+    {
+      "status": "PAUSED",
+      "message": "Waiting for human approval",
+      "timestamp": "2026-11-18T03:28:26+00:00"
+    }
+  ]
+}
